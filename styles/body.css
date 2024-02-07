@@ -1,0 +1,154 @@
+/*this styles work with all the codes of the html*/
+
+.body{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+}
+@media (max-width:678px) {
+    .body{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .big-image{
+        width: 100%;
+    }
+    
+    .small-image-container{
+        width: 100%;
+    }
+}
+.big-image{
+    width: 325px;
+}
+
+.small-image-container{
+    width: 325px;
+    display: flex;
+    gap: 9px;
+}
+.small-image{
+    width: 93px;
+}
+.second-container{
+    color: #d436d4;
+}
+h4{
+    font-size: 10px;
+    font-weight: 500;
+}
+h2{
+    font-weight: bold;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+@media (max-width:678px) {
+    .prices{
+       flex-direction: column;
+       gap: 10px;
+       width: 200px;
+    }
+}
+.price-span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.first-price{
+    font-size: 10px;
+    color: #e7a7e7;
+}
+.second-price{
+    font-size: 16px;
+    font-weight: 600;
+}
+.third-price{
+    background: #807380;
+    color: #eee;
+    border: 1px solid #807380;
+    padding: 5px 6px;
+    border-radius: 10px;
+}
+.rating{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.rating img{
+    width: 60px;
+}
+.review{
+    font-size: 13px;
+    color: #e7a7e7;
+}
+.des{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #e7a7e7;
+}
+.color{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.color span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.circle-colors{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.green{
+    height: 20px;
+    width: 20px;
+    background: green;
+    border-radius: 50%;
+}
+.orange{
+    height: 20px;
+    width: 20px;
+    background: orange;
+    border-radius: 50%;
+}
+.red{
+    height: 20px;
+    width: 20px;
+    background: red;
+    border-radius: 50%;
+}
+.black{
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 50%;
+}
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.add-to-cart,
+.add-to-wishlist{
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+}
+.add-to-cart{
+    background: #d436d4;
+    border: 1px solid #d436d4;
+}
+.add-to-wishlist{
+    background: #e7a7e7;
+    border: 1px solid #e7a7e7;
+
+}

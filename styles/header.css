@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    background: #1f041f;
+}
+.header{
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #1f041f;
+    color: #d436d4;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 2px 2px #e4e4e4;
+    z-index: 1000;
+}
+.left-header{
+    font-size: 15px;
+    font-weight: 500;
+    width: 270px;
+}
+
+.left-header ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 5px;
+}
+.left-header a{
+    text-decoration: none;
+    color: #d436d4;
+    transition: .2s;
+}
+.left-header a:hover,
+.left-header a.present{
+    background: #d436d4;
+    color: #222;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+.middle-header{
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-shrink: 1;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.hamburger-open{
+    display: none;
+}
+.right-header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 200px;
+    gap: 20px;
+    flex-shrink: 1;
+    cursor: pointer;
+}
+.account{
+    font-size: 15px;
+    font-weight: 500;
+}
+.cart{
+    width: 50px;
+    position: relative;
+}
+.cart-icon{
+    width: 38px;
+    margin-top: 20px;
+}
+.quantity{
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    color: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+.hamburger-menu{
+    display: none;
+}
+
+@media (max-width:678px) {
+    .header{
+        padding: 8px;
+    }
+    .left-header{
+        position: fixed;
+        background: #2b112b;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 200px;
+        left: -2000px;
+        color: #eee;
+        height: 100vh;
+        font-size: 13px;
+        transition: .5s ease-in-out;
+        z-index: 100;
+    }
+    .active{
+        left: 0px;
+    }
+    .left-header ul{
+        margin-top: 20px;
+    }
+    .left-header ul li{
+        display: block;
+        padding: 8px 0px;
+    }
+    .middle-header{
+        font-size: 1em;
+    }
+    .right-header{
+        gap: 10px;
+    }
+    .account{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .cart-icon{
+        width: 30px;
+        margin-top: 8px;
+    }
+    .quantity{
+        top: 3px;
+        left: 14px;
+        font-size: 12px;
+    }
+    .hamburger-menu{
+        margin-left: 178px;
+        margin-top: 20px;
+        width: 16px;
+        height: 13px;
+        display: block;
+       }
+       .hamburger-open{
+        display: block;
+        width: 16px;
+        height: 13px;
+        margin-top: 3px;
+       }
+    
+}
